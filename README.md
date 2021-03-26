@@ -1,11 +1,12 @@
-# Lottery
+# Help a Paw
+A family of smart contracts developed for NEAR Protocol to help sick and stray animals which are need of help.
 
-This repository includes a complete project structure for AssemblyScript contracts targeting the NEAR platform.
+## Consept
+Shelters can give information about animals in need of help and how much funding each animal case require. Users can help these animals by donating an amount of money.
 
-The example here is playful.  It's a toy involving a lottery.
-
-The goal of this repository is to make it as easy as possible to get started writing unit and simulation tests for AssemblyScript contracts built to work with NEAR Protocol.
-
+Contracts:
+1- adding an animal info
+2- sending donation to an animal
 
 ## Usage
 
@@ -15,68 +16,39 @@ The goal of this repository is to make it as easy as possible to get started wri
 2. run `yarn`
 3. run `yarn test`
 
+### Running Scripts
+
+To start the contract;
+  - run `./script/1.init.sh`
+To add an animal and donation;
+  - run `./script/2.run.sh [type of animal] [amount of money]`
+
 ### Top-level `yarn` commands
 
 - run `yarn test` to run all tests
   - (!) be sure to run `yarn build:release` at least once before:
     - run `yarn test:unit` to run only unit tests
-    - run `yarn test:simulate` to run only simulation tests
 - run `yarn build` to quickly verify build status
 - run `yarn clean` to clean up build folder
 
 ### Other documentation
 
-- Lottery contract and test documentation
-  - see `/src/lottery/README` for Lottery interface
-  - see `/src/lottery/__tests__/README` for Lottery unit testing details
+- Paw contract and test documentation
+  - see `/src/paw/README` for Paw interface
+  - see `/src/paw/__tests__/README` for Paw unit testing details
 
-- Lottery contract simulation tests
-  - see `/simulation/README` for simulation testing
+### UI Wireframes
 
+ Here are some examples showing how we envision the basic user interface elements.
 
-## The file system
+#### Add an animal
 
-Please note that boilerplate project configuration files have been ommitted from the following lists for simplicity.
+<img src="./wireframes/img1.jpg" alt="img1"/>
 
-### Contracts and Unit Tests
+#### Animals list
 
-```txt
-src
-├── lottery                       <-- Lottery contract
-│   ├── README.md
-│   ├── __tests__
-│   │   ├── README.md
-│   │   ├── fee-strategies.unit.spec.ts
-│   │   ├── index.unit.spec.ts
-│   │   └── lottery.unit.spec.ts
-│   └── assembly
-│       ├── fee-strategies.ts
-│       ├── index.ts
-│       └── lottery.ts
-└── utils.ts                      <-- shared contract code
-```
+<img src="./wireframes/img2.jpg" alt="img2"/>
 
+#### Donate to an animal
 
-### Simulation Tests
-
-```txt
-simulation                        <-- simulation tests
-├── Cargo.toml
-├── README.md
-└── src
-    ├── lib.rs
-    └── lottery.rs
-```
-
-### Helper Scripts
-
-```txt
-scripts
-├── 1.init.sh
-├── 2.play.sh
-├── 3.reset.sh
-├── README.md                     <-- instructions
-├── report.sh
-├── x-configure-fee.sh
-└── x-configure-lottery.sh
-```
+<img src="./wireframes/img3.jpg" alt="img3"/># Near-protocol-help-paw
