@@ -1,5 +1,5 @@
 # Help a Paw
-A family of smart contracts developed for NEAR Protocol to help sick and stray animals which are need of help.
+A smart contract developed for NEAR Protocol to help sick and stray animals which are need of help.
 
 ## Consept
 Shelters can give information about animals in need of help and how much funding each animal case require. Users can help these animals by donating an amount of money.
