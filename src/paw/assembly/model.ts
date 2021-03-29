@@ -1,11 +1,11 @@
 import { context, u128, PersistentVector } from 'near-sdk-as';
 
 type AccountId = string;
-// The maximum number of latest messages the contract returns.
+// The maximum number of latest animals the contract returns.
 const MAX_ANIMALS = 12;
 
 /** 
- * Exporting a new class AddedAnimals so it can be used outside of this file.
+ * Exporting a new class Animal so it can be used outside of this file.
  */
 @nearBindgen
 export class Animal {
