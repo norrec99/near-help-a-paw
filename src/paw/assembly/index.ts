@@ -1,4 +1,4 @@
-import { Animal, animals, Donor, donors } from './model';
+import { Animal, animals, Donor } from './model';
 import { u128, Context } from 'near-sdk-as';
 
 // --- contract code goes below
@@ -14,6 +14,8 @@ export function getAnimals(): Animal[] {
 }
 
 export function donate(animalID: i8): void {
+	log(Context.attachedDeposit);
+	log(Context.sender);
 	const amount = Context.attachedDeposit;
 	assert(amount > u128.Zero, 'Must attach more than 0 near');
 

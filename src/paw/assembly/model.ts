@@ -11,7 +11,7 @@ const MAX_ANIMALS = 12;
 export class Animal {
 	owner: string;
 
-	constructor(public type: string, public description: string, public totalDonation: u128) {
+	constructor(public type: string, public description: string, public totalDonation: u128 = u128.Zero) {
 		this.owner = context.sender;
 	}
 
